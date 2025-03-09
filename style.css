@@ -1,0 +1,147 @@
+@font-face {
+	font-family: Metropolis;
+	src: url(fonts/metropolis.regular.otf);
+}
+body{
+	background-color:#F4E8C1;
+	margin:0px;
+	padding:0px;
+	font-family:Metropolis, Arial, sans-serif;
+}
+h1{
+	text-align:center;
+}
+p{
+	text-align:center;
+}
+.navWrapper{
+	background-color:#A0C1B9 !important;
+	width:100%;
+	height:70px;
+	position:fixed;
+	z-index:1;
+}
+.mainColFlex
+{
+	display:flex;
+	flex-direction: row;
+}
+.mainLeftCol
+{
+	width:50%;
+	height:550px;
+	background-color: #F4E8C1;
+}
+.mainRightCol
+{
+	width:50%;
+	height:550px;
+	text-align:center;
+}
+#header{
+	background-image:url("images/guitar_pic.PNG");
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:550px;
+}
+#firstSection{
+	padding-top:30px;
+	text-align:center;
+	padding-bottom:50px;
+	width:auto;
+	position:relative;
+
+}
+#firstSectionContent{
+	padding-top:30px;
+	text-align:center;
+	padding-bottom:10px;
+	margin-left:0px;
+
+}
+#secondSection{
+	width:100%;
+	padding-top:30px;
+	text-align:center;
+	padding-bottom:50px;
+	background-color:#A0C1B9;
+}
+#footer{
+	width:100%;
+	height:80px;
+	text-align:center;
+	background-color:#A0C1B9;
+}
+
+.clearBoth{
+	clear:both;
+}
+.container{
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+}
+.iconImg{
+	max-height:35px;
+	width:auto;
+}
+.iconImg2
+{
+	max-height:20px;
+	max-width:20px !important;
+	width:auto;
+}
+.mainImg
+{
+	max-height:550px;
+}
+.purpleHover:hover{
+	color:#706993;
+}
+.blueHover:hover{
+	color:blue;
+}
+.blueHover{
+	color:#A0C1B9;
+}
+.drop-in {
+ animation: drop-in 1s ease 200ms backwards;
+}
+.drop-in-2 {
+ animation: drop-in 1200ms ease 500ms backwards;
+}
+.overflow-hidden {
+ overflow: hidden;
+}
+.grid-row{
+	display:flex;
+	justify-content: space-around;
+	padding-bottom:100px;
+}
+.square{
+	height:auto;
+	width:20%;
+}
+.imgSize{
+	max-width:200px;
+	height:auto;
+}
+#slightRightMargin{
+	margin-right:50px;
+}
+@keyframes drop-in {
+ from {
+  opacity: 0;
+  transform: translateY(-100px);
+ }
+ to {
+  opacity: 1;
+  transform: translate(0px);
+ }
+}
+@media (max-width: 676px){
+	.navWrapper {height: auto; padding-bottom:0px; margin:0px;}
+	.container{width:auto;}
+	ul{height:auto; padding:0px; margin:0px;}
+	#slightRightMargin{font-size:1.9em;}

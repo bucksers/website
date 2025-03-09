@@ -1,10 +1,491 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Bucksers Portfolio</title>
-</head>
-<body>
-    <h1>Welcome to Bucksers' Portfolio!</h1>
-    <p>This is a test page to make sure Namecheap works.</p>
-</body>
+<html>
+	<head>
+		<title>Will Buckser-Schulz | Portfolio Page</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link href="style.css" rel="stylesheet" />
+		<link rel="shortcut icon" type="images/png" href="images/vaporeon_favicon.png"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<style>
+			#header{
+
+				background-image:none;
+				padding-top:100px;
+				font-size:120%;
+				height:auto;
+				text-align:center;
+				clear:both;
+				padding-bottom:10px;
+			}
+			#firstSection{
+				padding-bottom:10px;
+				color:#331E38;
+			}
+			#tanSection{
+				padding-top:30px;
+				text-align:center;
+				padding-bottom:10px;
+				/* width:auto; */
+				position:relative;
+				background-color:#FFE7C2;
+			}
+			#tanSectionContent{
+				padding-top:30px;
+				text-align:center;
+				padding-bottom:30px;
+				/* width:auto; */
+				position:relative;
+				color:#70A0AF;
+			}
+			#secondSection{
+				padding-top:30px;
+				text-align:center;
+				padding-bottom:30px;
+				/* width:auto; */
+				position:relative;
+				background-color:#FFFFFF;
+
+			}
+			#secondSectionContent{
+				padding-top:10px;
+				text-align:center;
+				padding-bottom:10px;
+
+			}
+			#about-description{
+				font-size:1em;
+				float:left;
+				text-align:left;
+				width:60%;
+				margin-left:20%;
+			}
+			#about-description > p{
+				text-align:left;
+			}
+			#expProj-description{
+				font-size:1em;
+				float:left;
+				text-align:left;
+				width:100%;
+				display:flex;
+				flex-direction:row;
+			}
+			#expProj-description > p{
+				text-align:left;
+				max-width:200px;
+				
+			}
+			.center-Description > p{
+				color:#70A0AF;
+				/* width:60%; */
+				padding-top:0px;
+				/* padding-left: 20%; */
+				/* padding-right: 20%; */
+				clear:both;
+				font-size:0.85em;
+				margin-bottom:0px;
+				order:2;
+
+			}
+			.bullet-row > p{
+				font-size:1.2em;
+			}
+			.container{
+				padding:0px;
+				text-align:center;
+				margin-right:0px;
+				margin-left:0px;
+				height:auto;
+				width:100%;
+				max-width:100%;
+				display:flex;
+				justify-content:center;
+				/* background-color:#FFFFFF; */
+				padding-bottom: 30px;
+
+			}
+			h1{
+				margin-top:15px;
+				font-size:3.5em;
+				color:#70A0AF;
+				width:100%;
+				margin-bottom:0;
+			}
+			h2{
+				padding-bottom:30px;
+				color:#331E38;
+				font-size:1.7em;
+			}
+			video{
+				padding-bottom:30px;
+			}
+			.noTextDecorBlueHover{
+				text-decoration:none;
+				color:#70A0AF;
+			}
+			.noTextDecorPurpleHover{
+				text-decoration:none;
+				color:#331E38;
+			}
+			.underlineTextBlue
+			{
+				text-decoration: underline;
+				color:#70A0AF;
+			}
+			.underline
+			{
+				text-decoration: underline;
+				color:black;
+			}
+			body{
+				background-color:#FFE7C2;
+			}
+			.grid-row{
+				display:flex;
+				justify-content: space-around;
+				padding-bottom:50px;
+			}
+			.square{
+				height:auto;
+				width:20%;
+
+			}
+			.bullet-row{
+				display:flex;
+				justify-content: center;
+				margin-top:10px;
+			}
+			.portfolioPhoto
+			{
+				max-width: 650px;
+				height:auto;
+				order:1;
+			}
+			.portfolioPhoto-Container
+			{
+
+			}
+			.photo-Container{
+				width:320px;
+				max-height:160px;
+				
+			}
+			.photoSquare-Container{
+				width:240px;
+				max-height:240px;
+				
+			}
+			.descrip-Container{
+				width:520px;
+				height:160px;
+				padding-right:30px;
+				display:flex;
+				flex-direction:column;
+				padding-left:10px;
+			}
+			.smallerLineHeight{
+				line-height: 0.7;
+			}
+			.img-icon{
+				width:auto;
+				max-height:20px;
+			}
+			.imgSize{
+				max-width:200px;
+				height:auto;
+			}
+			.gifSize
+			{
+				max-width:512px;
+				height:auto;
+			}
+			.center-Description{
+				display:flex;
+				justify-content: center;
+				flex-direction:row;
+				align-items: center;
+				padding-left:10px;
+				max-height: 400px;
+				padding-right: 20px;
+			}
+			.text-Container
+			{
+				color:#70A0AF;
+				/* width:60%; */
+				padding-top:0px;
+				/* padding-left: 20%; */
+				/* padding-right: 20%; */
+				clear:both;
+				font-size:0.9em;
+				padding-right:60px;
+				order:2;
+			}
+			.contact-Container
+			{
+				align-items: center;
+				color:black;
+			}
+			.photoDescription-Container
+			{
+				display:flex;
+			}
+			.listContainer
+			{
+
+			}
+			.bullet-list
+			{
+				padding: 0;
+				list-style-type:none;
+			}
+			.bullet-list li {
+				font-size:1em;
+				float:left;
+				text-align:left;
+				width:60%;
+				margin-left:20%;
+			}
+			#purpleBackground{
+				background-color:#C8BFE7;
+			}
+			#tanBackground{
+				background-color: #FFE7C2;
+			}
+			#justify-Start{
+				justify-content:flex-start;
+			}
+			#extraPadding{
+				padding-bottom:25px;
+			}
+			#engineFooter{
+				padding-bottom:50px;
+			}
+			@media(max-width: 1170px) and (max-height: 960px)
+			{
+				.text-Container{font-size:0.7em;}
+				.portfolioPhoto{max-width: 500px;}
+			}
+			@media (max-width: 1200px) and (max-height: 1180px)
+			{
+				.portfolioPhoto{max-width: 500px;}
+				.center-Description{max-height: 500px; }
+				.text-Container{font-size:0.7em;}
+				.photo-Container{width:250px; height:auto;}
+			}
+			@media (max-width: 900px)
+			{
+				.portfolioPhoto{max-width: 500px;}
+				.center-Description{max-height: 500px; }
+				.text-Container{font-size:0.7em;}
+				.photo-Container{width:250px; height:auto;}
+			}
+			@media(max-width: 840px) and (max-height: 900px)
+			{
+				.text-Container{font-size:0.6em;}
+				.portfolioPhoto{max-width: 500px; height:auto;}
+				.center-Description{max-height: 560px; }
+				.photo-Container{width:250px; height:125px; margin:auto; }
+				#expProj-description{flex-direction:column;align-items:center; width:100%;}
+				.photoDescription-Container{display:block; font-size:0.8em;}
+				.descrip-Container{padding-top:20px;}
+			}
+			@media(max-width: 830px) and (max-height: 1020px) /* Single Col layout */
+			{
+				.center-Description{max-height: max-content; flex-direction: column; padding-right: 0px; padding-left:20px;}
+				.portfolioPhoto{max-width: 500px; max-height:300px; padding-top:10px;}
+				.portfolioPhoto-Container{width:100%;}
+				.text-Container{font-size:0.8em;}
+				h1{padding-bottom:20px}
+				.contact-Container{font-size:0.8em; padding-top:20px;}
+				#expProj-description{flex-direction:column;align-items:center; width:100%;}
+				.photoDescription-Container{display:block; font-size:0.8em;}
+				.descrip-Container{padding-top:20px; padding-right:10px;}
+				.photo-Container{width:250px; height:auto; margin:auto; }
+				.smallerLineHeight{line-height: 1.0;}
+			}
+			@media (max-width: 676px)
+			{
+				h1{margin-top:60px; font-weight:500;}
+				#about-description{width:80%; margin-left:10%;}
+				h2{font-weight:500;}
+				.center-Description{height:auto; overflow-x:hidden;}
+				.text-Container{font-size:0.7em;}
+				.descrip-Container{margin-left:5%; margin-right:7%; width:auto; height:auto;}
+				#engineFooter{padding-bottom: 0px;}
+				#about-description{font-size:0.8em;}
+				
+			}
+			@media (max-width: 640px)
+			{
+				h1{margin-top:60px; font-size:2.9em; font-weight:500;}
+				#about-description{width:80%; margin-left:10%;}
+				.bullet-row > p{ font-size:1.0em; padding-right:10px;}
+				video{width:90%;}
+				.gifSize{width: 70%}
+				.text-Container{font-size:0.7em; margin:auto; padding-right:0px;}
+				.text-Container > p{margin:auto;}
+				.portfolioPhoto-Container{width:auto;}
+				.center-Description{height:auto; padding-left:0px; margin-left:3%; margin-right:3%;}
+				
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navWrapper">
+				<header class="d-flex flex-wrap justify-content-center py-3">
+	      			<a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+	        			<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+	        			<span class="fs-4" id="slightRightMargin">Will Buckser-Schulz</span>
+	      			</a>
+	      		</ul>
+	    		</header>
+	    	</div>
+	    <div class="clearBoth"></div>
+	    <div id="header">
+	    	<h1><strong>Portfolio</strong></h1>
+	    	<div class="clearBoth"></div>
+	    	<div class="center-Description">
+				<div class="portfolioPhoto-Container">
+					<img src="images/profile_pic_cropped_transparent_bg.png" class="portfolioPhoto" alt="Will wearing his undergraduate USC sash and orange master's hood with a Fight On! peace sign">
+				</div>
+				<div class="text-Container">
+					<p>My name is Will Buckser-Schulz. Currently, I am a rendering engineer at 
+						<a class="underlineTextBlue"href="https://sites.disney.com/waltdisneyimagineering/"target="_blank">Walt Disney Imagineering</a> in Los Angeles, CA.
+					</p>
+					<div class="clearBoth"></div>
+					<p>
+						I am a student at the <a class="underlineTextBlue" href="https://www.usc.edu/" target="_blank">University of Southern California</a>, pursuing a dual degree in 
+						<a class="underlineTextBlue" href="https://www.cs.usc.edu/" target="_blank">Computer Science</a> and <a class="underlineTextBlue" href="https://music.usc.edu/" target="_blank">Jazz Guitar</a>, with plans to graduate in <strong>December 2025</strong>.
+					</p>
+					<p>
+						My passion lies in <strong>coding</strong>, especially in <strong>C++</strong>, and I love building things — whether that’s <strong>software projects</strong>, <strong>creative tools</strong>, or something entirely new. 
+						I’m excited by the intersection of <strong>technology</strong> and <strong>art</strong>, and I’m always looking for ways to combine my skills in <strong>programming</strong> and <strong>music</strong> into innovative projects.
+					</p>
+				</div>
+	    	</div>
+			<div class="clearBoth"></div>
+			<div class="contact-Container">
+				<p><img src="images/mailIcon.png" class="img-icon" alt="Email icon">
+					<a class="underline"href="mailto:will.buckserschulz@gmail.com"target="_blank">Email (will.buckserschulz@gmail.com)</a>
+					/ <img src="images/linkedinIcon.jpg" class="img-icon" alt="LinkedIn icon">
+					<a class="underline"href="https://www.linkedin.com/in/will-buckser-schulz/"target="_blank">LinkedIn</a>
+					/ <img src="images/githubIcon.png" class="img-icon" alt="GitHub icon">
+					<a class="underline"href="https://github.com/bucksers"target="_blank">GitHub</a>
+					</p>
+			</div>
+	    </div>
+	    <div class="clearBoth"></div>
+		<div class="container" id="purpleBackground">
+			<div id="firstSection">
+				<div id="firstSectionContent">
+					<h2><strong>Projects</strong></h2>
+					<div id="expProj-description">
+						<div class="photoDescription-Container">
+							<div class="photo-Container">
+								<img src="images/portal.gif"class="photo-Container" alt="A gif of solving an in-game portal puzzle.">
+							</div>
+							<div class="descrip-Container">
+								<div class="smallerLineHeight">
+									<p><strong>Portal | ITP 380 Final Project</strong></p>
+									<p>2024 | <a class="underline"href="mailto:will.buckesrschulz@gmail.com"target="_blank">Contact for code.</a></p>
+								</div>
+								<p>Developed in C++ using the SDL library and custom 3D math, this project recreates several levels from <em>Portal</em>.</p>
+								<p>Implemented collision detection, player movement, teleportation, and puzzle mechanics, alongside a custom audio system.</p>
+							</div>
+						</div>
+	    			</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="purpleBackground">
+			<div id="firstSection">
+				<div id="firstSectionContent">
+					<div id="expProj-description">
+						<div class="photoDescription-Container">
+							<div class="photo-Container">
+								<img src="images/custom_compiler.gif" class="photo-Container" alt="A gif showing example source code being compiled into an abstract syntax tree and assembly-like output.">
+							</div>
+							<div class="descrip-Container">
+								<div class="smallerLineHeight">
+									<p><strong>Custom Compiler | C++ Project</strong></p>
+									<p>2024 | <a class="underline" href="mailto:will.buckserschulz@gmail.com" target="_blank">Contact for code.</a></p>
+								</div>
+								<p>Built a C++ compiler that translates a custom Turtle-like language into low-level assembly-like code, with a full pipeline: lexer (Flex), parser (Bison), AST, code generation, and linear-scan register allocation.</p>
+								<p>Supports variables, loops, conditionals, math, arrays, and turtle graphics (move, rotate, color).</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="purpleBackground">
+			<div id="firstSection">
+				<div id="firstSectionContent">
+					<div id="expProj-description">
+						<div class="photoDescription-Container">
+							<div class="photo-Container">
+								<img src="images/vibescout.gif"class="photo-Container" alt="A gif showing the operation of the vibescout app.">
+							</div>
+							<div class="descrip-Container">
+								<div class="smallerLineHeight">
+									<p><strong>VibeScout | AEC Hackathon Runner Up</strong></p>
+									<p>2024 | <a class="underline"href="https://github.com/bucksers/AECTech-Hackathon-Apartment-Finder"target="_blank">Code</a></p>
+								</div>
+								<p>Find neighborhoods similar to one's own in LA. Backend in Python using Flask with React frontend. Utilized OpenStreetMaps API to retrieve and manage data on neighborhood characteristics, implementing a K-Nearest Neighbors algorithm to identify and rank similar neighborhoods.</p>
+							</div>
+						</div>
+	    			</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" >
+			<div id="tanSection">
+	    		<div id="#tanSectionContent">
+					<h2><strong>Experience</strong></h2>
+					<div id="expProj-description">
+						<div class="photoDescription-Container">
+							<div class="photo-Container">
+								<img src="images/vet.png"class="photo-Container" alt="veg.vet logo">
+							</div>
+							<div class="descrip-Container">
+								<div class="smallerLineHeight">
+									<p><strong>veg.vet | Frontend Web Developer</strong></p>
+									<p>June 2021-August 2021</p>
+								</div>
+								<p>Developed a mobile-responsive ReactJS and Redux application for pet owners to pre-check into clinic, expediting emergency care by integrating check-in details via Fetch to an external API.
+								</p>
+							</div>
+						</div>
+	    			</div>
+				</div>
+			</div> 
+		</div>
+		<div class="clearBoth"></div>
+		<div class="container" >
+			<div id="tanSection">
+	    		<div id="#tanSectionContent">
+					<div id="expProj-description">
+						<div class="photoDescription-Container">
+							<div class="photo-Container">
+								<img src="images/The_Knot_Worldwide_Logo.jpg"class="photo-Container" alt="TKWW logo">
+							</div>
+							<div class="descrip-Container">
+								<div class="smallerLineHeight">
+									<p><strong>The Knot Worldwide | Market Analyst Intern</strong></p>
+								</div>
+								<p>Engineered and organized brand datasets using Python (Pandas) and visualized trends with Seaborn to highlight correlations between demographics and brand engagement.
+								</p>
+							</div>
+						</div>
+	    			</div>
+				</div>
+			</div> 
+		</div>
+		<div class="clearBoth"></div>
+		<br>
+		<br>
+	    <div id="footer"><br>January 2025</div>
+	</body>
 </html>
